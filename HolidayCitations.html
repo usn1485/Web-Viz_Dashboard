@@ -25,9 +25,9 @@
 <body bg-light>
   <!-----Navigation -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
-      <a class="navbar-brand bg-primary" href="index.html">LA Parking Citations Analysis</a>
+      <a class="navbar-brand" href="index.html">LA Parking Citations Analysis</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,14 +58,53 @@
       </div>
     </div>
   </nav>
-<h1> This is HolidayCitations Html </h1>
+  <div class="container-fluid padding">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-7 bg-light">
+        <h3>Citations Issued on different Holidays. </h3>
+        <a href="HolidayCitations.html"><img src="images/Total_citations_holiday.png"
+            class="rounded float-left compImg mx-auto d-block"></a>
+        <p>This graph shows us Citations issued count on different US Holidays .
+           I was curious to find since LA is top famous tourist place in USA, which holidays
+           season might be the worst to visit LA or be more cautious while parking in LA. By looking at the graph we can see that
+           the Veterens Memorial Holiday and New year holidays are worst in getting more parking citations in LA. 
+            </p>
+      </div>
 
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5 bg-light ">
 
+        <h3>Visualizations</h3>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="MonthlyCitations.html"><img class="img-fluid img" src="images/Total_citations_Month.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="CitationHeatmap.html"><img class="img-fluid img" src="images/Total_citations_HourDay.png">
+              </a>
+            </div>
 
- 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="HolidayCitations.html"><img class="active img-fluid img" src="images/Total_citations_holiday.png">
+              </a>
+            </div>
 
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="YearlyCitations.html"><img class="img-fluid img" src="images/Total_citations_Year.png">
+              </a>
+            </div>
 
-  <!-- Total Number of Citations by the Hour and Day of the Week-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

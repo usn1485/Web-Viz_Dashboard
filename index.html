@@ -27,7 +27,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
-      <a class="navbar-brand bg-info " href="index.html">LA Parking Citations Analysis</a>
+      <a class="navbar-brand" href="index.html">LA Parking Citations Analysis</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -60,41 +60,51 @@
   </nav>
   <div class="container-fluid padding">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-lg-8 bg-light">
-        <h3>Project Summary: Day of week and Time of day citations</h3>
-        <img src="images/Total_citations_HourDay.png" class="rounded float-left img" width=450px, height=350px>
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-7 bg-light">
+        <h3>Project Summary : Day of week and Time of day citations</h3>
+        <a href="CitationHeatmap.html"><img src="images/Total_citations_HourDay.png"
+            class="rounded float-left compImg mx-auto d-block"></a>
         <p>The purpose of this project was to analyze the trend of LA Parking citations in order to
           create preventive guide for tourists.
           To accomplish this analysis, we first pulled data from the Kaggle website.The data had 900m rows. We chose a
-          sample out of it and did data cleansing and mining.</p>
+          sample out of it and did data cleansing and mining using Pandas. </p>
         <p>After assembling the dataset, we used GoogleMap API, Matplotlib to plot various aspects of the Citations vs
-          fines vs Daytime.
+          fines vs time.
           Factors we looked at included: Area of citations, Zipcodes of citations,Fines, and Time of citations. This
           site provides the
           source data and visualizations created as part of the analysis, as well as explanations and descriptions of
           any trends and correlations witnessed.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsam eligendi optio sint, eveniet
-          obcaecati error veniam ut quibusdam id impedit blanditiis totam soluta sequi iste explicabo autem nesciunt
-          libero.</p>
+        <p></p>
       </div>
 
-      <div class="col-xs-12 col-sm-6 col-lg-4 bg-light ">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5 bg-light ">
 
         <h3>Visualizations</h3>
         <div class="row">
-          <div class="col-xs-12 col-sm-3 col-md-6">
-            <img class="img-fluid img" src="images/Total_citations_Month.png">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="MonthlyCitations.html"><img class="img-fluid img" src="images/Total_citations_Month.png">
+              </a>
+            </div>
           </div>
-          <div class="col-xs-12 col-sm-3 col-md-6">
-            <img class="img-fluid img" src="images/Total_citations_HourDay.png">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="CitationHeatmap.html"><img class="img-fluid img" src="images/Total_citations_HourDay.png">
+              </a>
+            </div>
+
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-3 col-md-6">
-            <img class="img-fluid img" src="images/Total_citations_holiday.png">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="HolidayCitations.html"><img class="img-fluid img" src="images/Total_citations_holiday.png">
+              </a>
+            </div>
+
           </div>
-          <div class="col-xs-12 col-sm-3 col-md-6">
-            <img class="img-fluid img" src="images/Total_citations_Year.png">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="YearlyCitations.html"><img class="img-fluid img" src="images/Total_citations_Year.png">
+              </a>
+            </div>
+
           </div>
         </div>
       </div>

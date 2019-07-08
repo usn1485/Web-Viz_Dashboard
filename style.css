@@ -49,9 +49,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 body {
-  margin: 0;
+  margin: 10;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.875rem;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
   color: #444;
@@ -130,6 +130,9 @@ strong {
 
 small {
   font-size: 80%;
+}
+table, th, td {
+  border: 1px solid black;
 }
 
 sub,
@@ -368,95 +371,30 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 1.75rem;
+  font-size: 30px;
 }
 
 h3, .h3 {
   font-size: 1.53125rem;
+  margin-bottom: 3.0rem;
+  margin-top: 1.0rem;
 }
 
 h4, .h4 {
-  font-size: 1.3125rem;
+  font-size: 22px;
 }
 
 h5, .h5 {
-  font-size: 1.09375rem;
+  font-size: 20px;
 }
 
 h6, .h6 {
-  font-size: 0.875rem;
+  font-size: 15px;
+  margin-bottom: 1.0rem;
+  margin-top: 1.0rem;
 }
 
-.lead {
-  font-size: 1.09375rem;
-  font-weight: 300;
-}
 
-.display-1 {
-  font-size: 6rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
-
-.display-2 {
-  font-size: 5.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
-
-.display-3 {
-  font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
-
-.display-4 {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
-
-hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-small,
-.small {
-  font-size: 80%;
-  font-weight: 400;
-}
-
-mark,
-.mark {
-  padding: 0.2em;
-  background-color: #fcf8e3;
-}
-
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-
-.list-inline {
-  padding-left: 0;
-  list-style: none;
-}
-
-.list-inline-item {
-  display: inline-block;
-}
-
-.list-inline-item:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
-.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
 
 .blockquote {
   margin-bottom: 1rem;
@@ -477,10 +415,16 @@ mark,
   max-width: 100%;
   height: auto;
 }
+.compImg{
+  width:400px;
+  height:350px;
+  align-items: center;
+}
 
 .img{
   height: 250px;
-  width:250px
+  width:250px;
+
 }
 
 .img-thumbnail {
@@ -491,59 +435,15 @@ mark,
   height: auto;
 }
 
-.figure {
-  display: inline-block;
-}
 
-.figure-img {
-  margin-bottom: 0.5rem;
-  line-height: 1;
-}
-
-.figure-caption {
-  font-size: 90%;
-  color: #868e96;
-}
-
-code {
-  font-size: 87.5%;
-  color: #e83e8c;
-  word-break: break-word;
-}
 
 a > code {
   color: inherit;
 }
 
-kbd {
-  padding: 0.2rem 0.4rem;
-  font-size: 87.5%;
-  color: #fff;
-  background-color: #17141F;
-}
 
-kbd kbd {
-  padding: 0;
-  font-size: 100%;
-  font-weight: 700;
-}
 
-pre {
-  display: block;
-  font-size: 87.5%;
-  color: #17141F;
-}
 
-pre code {
-  font-size: inherit;
-  color: inherit;
-  word-break: normal;
-}
-
-.pre-scrollable {
-  max-height: 340px;
-  overflow-y: scroll;
-}
 
 .container {
   width: 100%;
@@ -3429,7 +3329,7 @@ input[type="button"].btn-block {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
-  border-top: 1px solid #F9F8FC;
+  border-top: 3px solid rgb(34, 30, 30);
 }
 
 .dropdown-item {
@@ -4246,6 +4146,7 @@ input[type="button"].btn-block {
   margin-bottom: -1px;
   font-size: 15px;
   font-weight: bold;
+  color:black;
   
 }
 
@@ -4265,7 +4166,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #444;
+  color:darkblue;
   background-color: #fff;
   border-color: #EDEDED #EDEDED #fff;
 }
@@ -4337,12 +4238,16 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3359375rem;
-  padding-bottom: 0.3359375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   margin-right: 1rem;
   font-size: 1.09375rem;
   line-height: inherit;
   white-space: wrap;
+  background:#15b1ee;
+  font-weight:500;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -10249,6 +10154,7 @@ a.text-dark:hover, a.text-dark:focus {
   h2,
   h3 {
     page-break-after: avoid;
+    padding-bottom: 50px;
   }
   @page {
     size: a3;

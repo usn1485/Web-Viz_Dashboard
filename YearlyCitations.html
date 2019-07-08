@@ -25,9 +25,9 @@
 <body bg-light>
   <!-----Navigation -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
-      <a class="navbar-brand bg-primary" href="index.html">LA Parking Citations Analysis</a>
+      <a class="navbar-brand bg-info " href="index.html">LA Parking Citations Analysis</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,9 +58,53 @@
       </div>
     </div>
   </nav>
-<h1> This is Yearly Html </h1>
+  <div class="container-fluid padding">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-7 bg-light">
+        <h3>Yearly LA Parking Citation Comparison</h3>
+        <a href="YearlyCitations.html"><img src="images/Total_citations_Year.png"
+            class="rounded float-left compImg mx-auto d-block"></a>
+        <p>This is Yearly Citations issued count bar graph. It shows on which years most of the citations have been issued. 
+            By looking at graph we can tell the year 2016 to 2018 more citations have been issued. But we can also 
+            see the that in 2018 the citation issueing count has been decresed which tells that there no relation between citation count 
+            issued and the growing population of LA city
+        </p>
+      </div>
 
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5 bg-light ">
 
+        <h3>Visualizations</h3>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="MonthlyCitations.html"><img class="img-fluid img" src="images/Total_citations_Month.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="CitationHeatmap.html"><img class="img-fluid img" src="images/Total_citations_HourDay.png">
+              </a>
+            </div>
 
-  </body>
-  </html>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="HolidayCitations.html"><img class="img-fluid img" src="images/Total_citations_holiday.png">
+              </a>
+            </div>
+
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="YearlyCitations.html"><img class="img-fluid img" src="images/Total_citations_Year.png">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

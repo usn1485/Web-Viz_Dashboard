@@ -25,9 +25,9 @@
 <body bg-light>
   <!-----Navigation -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
-      <a class="navbar-brand bg-primary" href="index.html">LA Parking Citations Analysis</a>
+      <a class="navbar-brand" href="index.html">LA Parking Citations Analysis</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -59,51 +59,51 @@
     </div>
   </nav>
   <div class="container-fluid padding">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-8 ">
-          <h3>Project Summary:Day Of week and Time of day citations</h3>
-          <img class="img-fluid" src="images/Total_citations_HourDay.png"
-            class="vizualization rounded float-left" width=250px height=250px >
-          <p>The purpose of this project was to analyze the trend of LA Parking citations in order to create preventive
-            guide for tourists.
-            To accomplish this analysis, we first pulled data from the Kaggle website.The data had 900m rows. We chose a
-            sample out of it and did data cleansing and mining.</p>
-          <p>After assembling the dataset, we used GoogleMap API, Matplotlib to plot various aspects of the Citations vs
-            fines vs Daytime.
-            Factors we looked at included: Area of citations, Zipcodes of citations,Fines, and Time of citations. This
-            site provides the
-            source data and visualizations created as part of the analysis, as well as explanations and descriptions of
-            any trends and correlations witnessed.</p>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-8 col-lg-7 bg-light">
+        <h3>Worst Days and time of days Heatmap</h3>
+        <a href="CitationHeatmap.html"><img src="images/Total_citations_HourDay.png"
+            class="rounded float-left compImg mx-auto d-block"></a>
+        <p>This is the Heatmap plotted using Seaborn python graphics library. This heatmap shows the worst days of the week and 
+          worst time of the day to avoid parking in LA.  The red color denisty tells which days and time of the day are worst. 
+          Looking at graph we can conclude that The mornings 8 to 10 am on Tuesday,Wednesday,and Thursday are worst times of the weekdays.
+        </p>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-5 bg-light ">
+
+        <h3>Visualizations</h3>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="MonthlyCitations.html"><img class="img-fluid img" src="images/Total_citations_Month.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="CitationHeatmap.html"><img class="img-fluid img" src="images/Total_citations_HourDay.png">
+              </a>
+            </div>
+
+          </div>
         </div>
-  
-        <div class="col-xs-12 col-sm-6 col-md-4 ">
-  
-          <h3>Visualizations</h3>
-          <div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-6">
-              <img class="img-fluid" src="images/Total_citations_Month.png">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="HolidayCitations.html"><img class="img-fluid img" src="images/Total_citations_holiday.png">
+              </a>
             </div>
-            <div class="col-xs-12 col-sm-3 col-md-6">
-              <img class="img-fluid" src="images/Total_citations_Month.png">
-            </div>
+
           </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-6">
-              <img class="img-fluid" src="images/Total_citations_Month.png">
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <div><a href="YearlyCitations.html"><img class="img-fluid img" src="images/Total_citations_Year.png">
+              </a>
             </div>
-            <div class="col-xs-12 col-sm-3 col-md-6">
-              <img class="img-fluid" src="images/Total_citations_Month.png">
-            </div>
+
           </div>
-  
         </div>
       </div>
     </div>
+  </div>
 
+</body>
 
-
-  </body>
-  </html>
-
-
-
+</html>

@@ -27,7 +27,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
-      <a class="navbar-brand bg-primary" href="index.html">LA Parking Citations Analysis</a>
+      <a class="navbar-brand bg-info" href="index.html">LA Parking Citations Analysis</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,48 +58,62 @@
       </div>
     </div>
   </nav>
-  <container-fluid>
-   
-      <h1 class="text-center"> Comparison: Citations VS X</h1>
-      <div >
-        <h6>Click on any plot to get into in depth analysis</h6>
-        <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-6">
+  <div class="container-fluid">
+
+    <h3 class="text-center"> Comparison: Citations count VS Time</h3>
+    <div class="dropdown-divider"></div>
+    <div>
+      <h6 class="text-center">Click on any plot to get into in depth analysis</h6>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
           <h4 class="text-center">VS Monthly Citations</h4>
-            <img class="img-fluid" src="images/Total_citations_Month.png">
-        </div><br>
-        <div class="col-xs-12 col-sm-3 col-md-6">
-            <h4 class="text-center">VS Monthly Citations</h4>
-              <img class="img-fluid" src="images/Total_citations_Month.png">
+          <div>
+            <a href="MonthlyCitations.html">
+              <img class="img-fluid compImg rounded mx-auto d-block" src="images/Total_citations_Month.png"></a>
           </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-6">
-              <h4 class="text-center">VS Yearly Citations</h4>
-                <img class="img-fluid" src="images/Total_citations_Month.png">
-            </div><br>
-            <div class="col-xs-12 col-sm-3 col-md-6">
-                <h4 class="text-center">VS Yearly Citations</h4>
-                  <img class="img-fluid" src="images/Total_citations_Month.png">
-              </div>
-            </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <h4 class="text-center">VS Yearly Citations</h4>
+          <div>
+            <a href="YearlyCitations.html">
+              <img class="img-fluid compImg rounded mx-auto d-block" src="images/Total_citations_Year.png"></a>
+          </div>
+        </div>
+      </div><br><br><br>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <h4 class="text-center">VS Holiday Citations</h4>
+          <div>
+            <a href="HolidayCitations.html">
+              <img class="img-fluid compImg rounded mx-auto d-block" src="images/Total_citations_holiday.png"></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <h4 class="text-center">VS Hourly Citations</h4>
+          <div>
+            <a href="CitationHeatmap.html">
+              <img class="img-fluid compImg rounded mx-auto d-block" src="images/Total_citations_HourDay.png"></a>
+          </div>
+        </div>
+      </div>
 
 
     </div>
 
 
-  </container-fluid>
+  </div>
 
 
 
 
 
 
-  </body>
-  </html>
+</body>
+
+</html>
 
 
-  <!-- Total Number of Citations by the Hour and Day of the Week-->
+<!-- Total Number of Citations by the Hour and Day of the Week-->
 </body>
 
 </html>
